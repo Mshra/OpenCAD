@@ -1,4 +1,4 @@
 import "./ui/main";
-import start from "./canvas/main";
+import start from "./solace/canvas";
 
 start();

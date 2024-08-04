@@ -1,7 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+
 html,
 body {
     margin: 0;
     padding: 0;
+    font-size: 16px;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
 body {
@@ -21,6 +28,7 @@ body {
     color: #838383;
     background: #0a0a0a;
     gap: 30px;
+    cursor: default;
 }
 
 #menubar > div:first-child {
