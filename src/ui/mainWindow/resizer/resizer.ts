@@ -8,11 +8,14 @@ function resize(e: MouseEvent) {
     canvas.style.width = `${e.clientX}px`;
   }
 }
+
 resizer.onmousedown = () => {
   isdragging = true;
   document.body.style.cursor = "col-resize";
 };
+
 document.body.addEventListener("mousemove", resize);
+
 document.body.onmouseup = () => {
   isdragging = false;
   document.body.style.cursor = "default";
