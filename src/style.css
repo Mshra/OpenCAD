@@ -1,14 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap");
 
 html,
 body {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    font-family: "Fira Code", monospace;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
 }
 
 body {
@@ -17,6 +13,10 @@ body {
     overflow: hidden;
     display: grid;
     grid-template-rows: auto 1fr;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
 #menubar {
@@ -38,15 +38,12 @@ body {
 #main-window {
     height: 100%;
     display: grid;
-    grid-template-columns: auto 10px 1fr;
+    grid-template-columns: auto 0.2% 1fr;
 }
 
 #c {
     display: block;
-    top: 32px;
     height: calc(100vh - 32px);
-    width: 1500px;
-    max-width: 1700px;
 }
 
 #resizer {
@@ -64,6 +61,7 @@ body {
     color: white;
     margin: 2px;
 }
+
 #items > li:nth-child(even) {
     background-color: black;
 }
