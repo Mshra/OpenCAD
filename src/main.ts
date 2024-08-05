@@ -1,4 +1,6 @@
-import "./ui/main";
-import start from "./solace/canvas";
+import "./ui/ui";
+import "./solace/cad";
 
-start();
+export default function canvas(): HTMLCanvasElement | null {
+  return document.querySelector("#c");
+}

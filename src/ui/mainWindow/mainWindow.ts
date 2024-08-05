@@ -1,12 +1,12 @@
 import resizer from "./resizer/resizer";
 import canvas from "./canvas/canvas";
-import propertiesPane from "./properties/properties";
+import sidebar from "./sidebar/sidebar";
 
 const mainWindow = document.createElement("div");
 mainWindow.setAttribute("id", "main-window");
 
 mainWindow.appendChild(canvas);
 mainWindow.appendChild(resizer);
-mainWindow.appendChild(propertiesPane);
+mainWindow.appendChild(sidebar);
 
 export default mainWindow;
