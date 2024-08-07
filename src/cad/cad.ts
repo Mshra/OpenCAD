@@ -5,7 +5,7 @@ import canvas from "../ui/mainWindow/canvas/canvas";
 const project = {
   renderer: new THREE.WebGLRenderer({ antialias: true, canvas }),
   camera: new THREE.PerspectiveCamera(75, 2, 0.1, 500),
-  gridHelper: new THREE.GridHelper(20, 20),
+  gridHelper: new THREE.GridHelper(30, 30),
   scene: new THREE.Scene(),
 } as {
   renderer: THREE.WebGLRenderer;
@@ -24,10 +24,6 @@ const cameraControl = new OrbitControls(
 );
 
 project.scene.add(project.gridHelper);
-
-const light = new THREE.DirectionalLight(0xffffff, 3);
-light.position.set(-1, 2, 4);
-project.scene.add(light);
 
 /** start the rendering only if canvas is present. */
 if (canvas) {
@@ -55,4 +51,5 @@ function resizeRendererToDisplaySize(renderer: THREE.WebGLRenderer): boolean {
   }
   return needResize;
 }
+
 export default project;

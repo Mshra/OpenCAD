@@ -9,11 +9,15 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.7",
     "typescript": "^5.2.2",
     "vite": "^5.3.4"
   },
   "dependencies": {
     "@types/three": "^0.167.1",
+    "stats.js": "^0.17.0",
     "three": "^0.167.1",
     "wrangler": "^3.68.0"
   }

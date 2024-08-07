@@ -1,5 +1,6 @@
 const canvas = document.createElement("canvas");
 canvas.setAttribute("id", "c");
+canvas.className = "block h-[calc(100vh - 32px)";
 
 // initialize the width of canvas as 70% of the client width.
 canvas.style.width = `${0.7 * document.body.clientWidth}px`;

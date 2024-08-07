@@ -1,6 +1,6 @@
 import canvas from "../canvas/canvas";
 const resizer = document.createElement("div");
-resizer.setAttribute("id", "resizer");
+resizer.className = "bg-[#0a0a0a] cursor-col-resize";
 
 let isdragging = false;
 function resize(e: MouseEvent) {

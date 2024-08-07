@@ -1,5 +1,5 @@
 import "./ui/ui";
-import "./solace/cad";
+import "./cad/cad";
 
 export default function canvas(): HTMLCanvasElement | null {
   return document.querySelector("#c");
